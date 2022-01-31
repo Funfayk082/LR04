@@ -1,9 +1,10 @@
 from os import *
 
-
 def input_n():
-  pass
-
+   n = input('Введите путь к папке: ')
+    if path.isdir(n) == True:
+        dictionary(n)
+    else: pt()
 
 def dictionary(n):
   for i in listdir(n):
@@ -26,3 +27,6 @@ def duplicate_2():
 
 if __name__ == '__main__':
   d1 = dict() # словарь для записи значений
+  input_n()
+  dictionary(n)
+  
